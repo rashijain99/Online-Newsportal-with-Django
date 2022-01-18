@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<section id="contentSection">
+     <div class="row">
+        <div class="left_content"> 
+          <div class="single_post_content">
+            <h2><span>DETAILED - NEWS</span></h2>
+            <div class="single_post_content_left">
+              <ul class="business_catgnav  wow fadeInDown">
+                <li>
+                  <figure class="bsbig_fig"> <a href="{% url 'singlepage' %}" class="featured_img"> <img src="/media/{{detailnews.news_image}}">  <span class="overlay"></span> </a>
+                    <figcaption> <a href="{% url 'singlepage' %}">{{detailnews.news_title}}</a> </figcaption>
+                    <p>{{detailnews.news_desc}}</p>
+                  </figure>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+    {% endblock content %}
+
+
+
+    
